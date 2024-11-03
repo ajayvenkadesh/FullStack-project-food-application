@@ -1,0 +1,56 @@
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// const ProfileImageUpload = ({ emailId }) => {
+//   const [file, setFile] = useState(null);
+
+//   const handleFileChange = (e) => {
+//     setFile(e.target.files[0]);
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     const formData = new FormData();
+//     formData.append('emailId', emailId);
+//     formData.append('file', file);
+
+//     try {
+//       const response = await axios.post('/user-api/upload-profile-image', formData, {
+//         headers: { 'Content-Type': 'multipart/form-data' }
+//       });
+//       console.log('Profile image uploaded successfully:', response.data);
+//     } catch (error) {
+//       console.error('Error uploading profile image:', error);
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input type="file" onChange={handleFileChange} />
+//       <button type="submit">Upload Profile Image</button>
+//     </form>
+//   );
+// };
+
+// export default ProfileImageUpload;
+
+  {/* <Card sx={{ maxWidth: 800,margin:2}}>
+                    <CardMedia
+                        sx={{ height: '100%' }}
+                        component="img"
+                        image={`/${restaurent.image}`} alt={restaurent.name}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h6" component="div" sx={{color:'black'}}>
+                             Restaurent Name : {restaurent.name}                        
+                        </Typography>
+                        <Typography sx={{ marginTop:-1,color:'black'}} gutterBottom variant="h6" >
+                            Category : {restaurent.category}
+                        </Typography>   
+                        </CardContent>                    
+                </Card>              
+            */}
+            
+        {/* </Grid>       */}
+        
+        

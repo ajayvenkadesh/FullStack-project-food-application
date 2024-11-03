@@ -1,0 +1,117 @@
+import { Restaurant } from '@mui/icons-material';
+import {
+    CardContent,
+   
+    AppBar,Toolbar,Box,
+    Container, 
+    Grid
+    } from '@mui/material';
+
+
+import Typography from '@mui/material/Typography';
+import { useLocation } from "react-router-dom";
+import { useParams } from 'react-router-dom';
+import Restaurant_container from '../components/restaurent_food/Restautent_container';
+
+
+
+export default function Food_item(){
+    
+    
+    // const { id } = useParams();
+    // const location = useLocation();
+    // const { restaurent } = location.state || {};  // Provide a fallback value
+    
+    // console.log(location.state);  // Check if this shows as undefined
+    // console.log(restaurent);      // Should show the correct restaurant data
+
+    // const imageUrl = restaurent.image.startsWith('/images')
+    // ? `${process.env.PUBLIC_URL}${restaurent.image}`
+    // : restaurent.image;
+    
+    // if (!restaurent) {
+    //     return <h1>No Data Available</h1>;
+    //   }
+    return(
+        <div>
+            {/* <Container maxWidth="xxl" disableGutters>
+                <Box disableGutters
+                sx={{
+                height: '60vh', // Adjust the height as necessary
+                backgroundImage: `url(${imageUrl})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                position: 'relative'
+                }}
+            >
+                {/* <Typography
+                variant="h3"
+                component="div"
+                sx={{
+                    color: 'white',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                    padding: '10px 20px',
+                    borderRadius: '8px',
+                    textAlign: 'center',
+                    position: 'absolute',
+                    bottom: '20px',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                }}
+                >
+                {restaurent.name}
+                </Typography> */}
+            {/* </Box> */}
+
+            {/* Restaurant Details */}
+            {/* <CardContent>
+                <Typography
+                variant="h5"
+                component="div"
+                sx={{ marginTop: 1, textAlign: 'left', color: 'black' }}
+                >
+                    Restaurant Name: {restaurent.name}
+                
+                </Typography>
+                <Typography
+                variant="body1"
+                sx={{ textAlign: 'left', marginTop: 2, color: 'black' }}
+                >
+                    Category: {restaurent.category}
+                </Typography>
+
+                <Typography
+                variant="body1"
+                sx={{ textAlign: 'left', marginTop: 1, color: 'black' }}
+                >
+                {restaurent.description}
+                </Typography>
+
+                <Typography
+                variant="body1"
+                sx={{ textAlign: 'left', marginTop: 1, color: 'black' }}
+                >
+                Special Item: {restaurent.specialItem}
+                </Typography>
+            </CardContent>
+                    
+            <AppBar position="static"sx={{backgroundColor:'#F9A01A',marginTop:2,marginBottom:2}}>
+            <Container maxWidth="xl">
+                 <Toolbar disableGutters>
+                    <Typography noWrap variant="h5">List of Food Items Available</Typography>                    
+                 </Toolbar>                 
+            </Container>
+            
+            </AppBar>
+                
+
+            </Container> */}
+            <Restaurant_container/>
+      
+        </div>
+    );
+
+}
